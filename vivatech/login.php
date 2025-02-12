@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 💐💐__FLOWER STORE__💐💐 </title>
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div style="height: 80px;"></div> <!-- Adjust the height to match your navbar height -->
+
+    <!-- Welcome Message and Greeting Section -->
+    <div class="greeting" style="text-align: center; padding: 20px;">
+        <h2>Welcome to the Flower Shop💐💐!!</h2>
+        <?php
+          
+            date_default_timezone_set("Asia/Colombo");             
+            // Get the current hour
+            $hour = date("H");
+
+                       if ($hour < 12) {
+                echo "<h3>Good Morning! 🌞</h3>";
+            } elseif ($hour < 18) {
+                echo "<h3>Good Afternoon! 🌤️</h3>";
+            } else {
+                echo "<h3>Good Evening! 🌙</h3>";
+            }
+        ?>
+    </div>
+
+<img src="bg.jpg" class="bg" alt="Background Image">
+    <!-- Navigation Section Start -->
+    <header class="navbar">
+        <nav id="site-top-nav" class="navbar-menu navbar-fixed-top">
+            <div class="container">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.php" title="Logo">
+                        <img src="logo.jpg" alt="Logo" class="img-responsive">
+                    </a>
+                </div>
+                <!-- Main Menu -->
+                <div class="menu text-right">
+                    <ul>
+                        <li><a class="hvr-underline-from-center" href="index.php">Home</a></li>
+                        <li><a class="hvr-underline-from-center" href="flowers.php">Flowers</a></li>
+                        <li><a class="hvr-underline-from-center" href="order.php">Order</a></li>
+                        <li><a class="hvr-underline-from-center" href="contact.php">Contact</a></li>
+                        <li><a class="hvr-underline-from-center" href="login.php">Login</a></li>
+                        <li>
+                                                            <a href="order.php" class="btn-primary">Confirm Order</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navigation Section End -->
+
+    <!-- Login Section Start -->
+    <section class="login">
+        <div class="container">
+            <h2 class="text-center">Login</h2>
+            <div class="heading-border"></div>
+
+            <form action="" class="form">
+                <fieldset>
+                    <legend>Login</legend>
+                    <p class="label">Email</p>
+                    <input type="email" placeholder="Enter your email..." required>
+                    <p class="label">Password</p>
+                    <input type="password" placeholder="Enter your password..." required>
+                    <input type="submit" value="Login" class="btn-primary">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!-- Login Section End -->
+
+    <!-- Footer Section Start -->
+    <section class="footer">
+        <div class="container">
+            <div class="grid-3">
+                <div class="text-center">
+                    <h3>About Us</h3><br>
+                    <p>🌸 Bloom with Us! Fresh, elegant, and beautifully crafted flowers for every occasion. 🌹💐 #FlowerMagic #BlossomEveryday</p>
+                </div>
+                <div class="texr-center">
+                    <h3>Site Map</h3><br>
+                    <div class="site-links">
+                        <a href="flowerss.php">Flowers</a>
+                        <a href="order.php">Order</a>
+                        <a href="contact.php">Contact</a>
+                        <a href="login.php">Login</a>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h3>Social Links</h3><br>
+                    <div class="social">
+                        <ul>
+                            <li> <img src="https://img.icons8.com/color/48/null/facebook-new.png"/></li>
+                            <li> <img src="https://img.icons8.com/fluency/48/null/instagram-new.png"/></li>
+                            <li> <img src="https://img.icons8.com/color/48/null/twitter--v1.png"/></li>
+                            <li> <img src="https://img.icons8.com/color/48/null/linkedin-circled--v1.png"/></li>
+                            <li> <img src="https://img.icons8.com/color/48/null/youtube-play.png"/></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    
+    
+</body>
+</html>
